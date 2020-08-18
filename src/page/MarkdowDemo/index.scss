@@ -1,0 +1,40 @@
+.editor{
+  display: flex;
+  height: 100vh;
+  &-left{
+    flex: 1;
+    border: 10px solid rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    &>textarea{
+      height: 100% !important;
+      resize: none;
+    }
+  }
+  &-middle{
+    height: 100%;
+    width: 16px;
+    background: rgba(0, 0, 0, 0.05);
+    border-left: 2px solid rgba(0, 0, 0, 0.1);
+    border-right: 2px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25%;
+    cursor: pointer;
+
+    &-point{
+      display: inline-block;
+      height: 8px;
+      width: 8px;
+      background: rgba(0, 0, 0, 0.05);
+      border: 2px solid rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      margin-bottom: 8px;
+    }
+  }
+  &-right{
+    flex: 1;
+    border: 10px solid rgba(0, 0, 0, 0.05);
+    padding: 10px;
+  }
+}
